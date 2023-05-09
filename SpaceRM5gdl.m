@@ -63,7 +63,7 @@ w2=[0;
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%   DeclaraciÛn de variables adicionales  %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%   Declaraci√≥n de variables adicionales  %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 O3x3 = [0 , 0 , 0;
@@ -119,7 +119,7 @@ mJv=[m1*Jv1, m2*Jv2];
 mJw=[I1*k1+m1*SRc*Jv1,I2*k2+m2*SRc*Jv2];
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%   Matriz de transformaciÛn N  %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%   Matriz de transformaci√≥n N  %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 N = -inv([wc*E, -wc*Srr; wc*SRc, I0+wc*SRc*Srr])*[[mJv;mJw]];
@@ -132,7 +132,7 @@ disp(N)
 
 T   = ([N*dotPhi].')*[m0*E , O3x3;O3x3 , I0]*[N*dotPhi]+(v1.'*m1*v1+w1.'*m1*w1)+(v2.'*m2*v2+w2.'*m2*w2);
 T=simplify(T)
-disp('EnergÌa cinÈtica')
+disp('Energ√≠a cin√©tica')
 disp(T)
 
 disp('Lagrangiano')
@@ -147,7 +147,7 @@ fclose(fid);
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%% Modelado Din·mico por Euler Lagrange  %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Modelado Din√°mico por Euler Lagrange  %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 disp('Fase 1')
@@ -160,7 +160,7 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 disp('Fase 3')
-disp("Modelo din·mico:")
+disp("Modelo din√°mico:")
 disp(Eq)
 
 fid = fopen('Modelo.txt', 'wt');

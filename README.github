@@ -1,14 +1,18 @@
 ¿Qué hace el proyecto?
     Los archivos en este repositorio son los que han sido empleados para la obtención del modelado dinámico de un robot manipulador espacial de 5-gdl.
-    *Primero, tenemos el archivo "SpaceRM2gdl.m" que es el encargado de obtener la matriz del Jacobiano Generalizado, para después generar el lagrangiano del sistema, el cual es guardado como "L.txt".
+    *Primero, tenemos el archivo "SpaceRM5gdl.m" que es el encargado de obtener la matriz del Jacobiano Generalizado, para después generar el lagrangiano del sistema, el cual es guardado como "L.txt".
     *Posteriormente, se llama a la función del archivo "LagrangeDynamicEqDeriver.m" que es el encargado de realizar el método de Euler-Lagrange.
-    *En el mismo archivo "SpaceRM2gdl.m", una vez obtenido el modelo dinámico, se genera el archivo "Modelo.txt", que almacena el modelo dinámico. 
+    *En el mismo archivo "SpaceRM5gdl.m", una vez obtenido el modelo dinámico, se genera el archivo "Modelo.txt", que almacena el modelo dinámico. 
     *Se procede a separar la matriz de inercia M y la matriz de coriolis C. Ambas se almacenan en los archivos "Inercia.m" y "Coriolis.m" donde pueden ser llamadas como si fueran funciones.
     *Se selecciona manualmente la línea de código donde se encuentran ambas matrices y se guardan en archivos nuevos que son llamados "M.txt" y "C.txt" que corresponden a la matriz de inercia y de coriolis respectivamente.
     *Los archivos "M.txt" y "C.txt" son abiertos en un editor de código llamado "Sublime Text 3". De este modo ya queda expresado en sintaxis de Python. El motivo de hacerlo por medio de este programa es porque el modelo es demasiado grande y tomaría horas hacer los cambios manualmente.
     *Se utilizan algunos plugings para seleccionar los corchetes de las matrices y las potencias dentro de los términos de cada matriz. Los archivos nuevos son guardados como "M Python.txt" y C Python.txt" que corresponden a la matriz de inercia y coriolis respectivamente pero en sintaxis de Python.
+    *Posteriormente generamos un controlador por Par Calculado en el archivo "PruebaPC01.py", e introducimos las matrices de inercia y de coriolis, para posteriormente ejecutar el programa y corroborar que funciona.
+
+
+¿Cómo pueden comenzar los usuarios con el proyecto?
+    En este caso no tienen que llevar a cabo todo el proceso que se describió anteriormente. Pueden simplemente descargar los archivos "M Python.txt" y C Python.txt" que contienen las matrices de inercia y de coriolis respectivamente; esto por si desean insertar las matrices en otro controlador.
+    También pueden descargar el programa "PruebaPC01.py" que es ejecutable como un programa de python del modelo dinámico con el control por Par Calculado.
     
-Por qué el proyecto es útil.
-Cómo pueden comenzar los usuarios con el proyecto.
-Dónde pueden recibir ayuda los usuarios con tu proyecto
-Quién mantiene y contribuye con el proyecto.
+¿Dónde pueden recibir ayuda los usuarios con tu proyecto?
+    Si existe alguna duda, comentario o sugerencia, se pueden poner en contacto conmigo por correo electrónico: cris.mtzcolin@gmail.com

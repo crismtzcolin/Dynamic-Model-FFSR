@@ -1,4 +1,6 @@
-Qué hace el proyecto.
+¿Qué hace el proyecto?
+    Los archivos en este repositorio son los que han sido empleados para la obtención del modelado dinámico de un robot manipulador espacial de 5-gdl.
+    Se tiene el archivo "LagrangeDynamicEqDeriver.m" que 
 Por qué el proyecto es útil.
 Cómo pueden comenzar los usuarios con el proyecto.
 Dónde pueden recibir ayuda los usuarios con tu proyecto

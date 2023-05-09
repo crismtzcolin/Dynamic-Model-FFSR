@@ -1,9 +1,9 @@
 ¿Qué hace el proyecto?
     Los archivos en este repositorio son los que han sido empleados para la obtención del modelado dinámico de un robot manipulador espacial de 5-gdl.
-    Primero, tenemos el archivo "SpaceRM2gdl.m" que es el encargado de obtener la matriz del Jacobiano Generalizado, para posteriormente obtener el lagrangiano del sistema.
-    Posteriormente, se tiene el archivo "LagrangeDynamicEqDeriver.m" que es el encargado de realizar el método de Euler-Lagrange.
-    
-    
+    *Primero, tenemos el archivo "SpaceRM2gdl.m" que es el encargado de obtener la matriz del Jacobiano Generalizado, para posteriormente obtener el lagrangiano del sistema.
+    *Posteriormente, se llama a la función del archivo "LagrangeDynamicEqDeriver.m" que es el encargado de realizar el método de Euler-Lagrange.
+    *En el mismo archivo "SpaceRM2gdl.m", una vez obtenido el modelo dinámico, se genera el archivo "Modelo.txt", que almacena el modelo dinámico. 
+    *Se procede a separar la matriz de inercia M y la matriz de coriolis C. Ambas se almacenan en los archivos "Inercia.m" y "Coriolis.m"
 Por qué el proyecto es útil.
 Cómo pueden comenzar los usuarios con el proyecto.
 Dónde pueden recibir ayuda los usuarios con tu proyecto

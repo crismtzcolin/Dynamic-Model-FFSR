@@ -1,9 +1,13 @@
 ¿Qué hace el proyecto?
     Los archivos en este repositorio son los que han sido empleados para la obtención del modelado dinámico de un robot manipulador espacial de 5-gdl.
-    *Primero, tenemos el archivo "SpaceRM2gdl.m" que es el encargado de obtener la matriz del Jacobiano Generalizado, para posteriormente obtener el lagrangiano del sistema.
+    *Primero, tenemos el archivo "SpaceRM2gdl.m" que es el encargado de obtener la matriz del Jacobiano Generalizado, para después generar el lagrangiano del sistema.
     *Posteriormente, se llama a la función del archivo "LagrangeDynamicEqDeriver.m" que es el encargado de realizar el método de Euler-Lagrange.
     *En el mismo archivo "SpaceRM2gdl.m", una vez obtenido el modelo dinámico, se genera el archivo "Modelo.txt", que almacena el modelo dinámico. 
-    *Se procede a separar la matriz de inercia M y la matriz de coriolis C. Ambas se almacenan en los archivos "Inercia.m" y "Coriolis.m"
+    *Se procede a separar la matriz de inercia M y la matriz de coriolis C. Ambas se almacenan en los archivos "Inercia.m" y "Coriolis.m" donde pueden ser llamadas como si fueran funciones.
+    *Se selecciona manualmente la línea de código donde se encuentran ambas matrices y se guardan en archivos nuevos que son llamados "M.txt" y "C.txt" que corresponden a la matriz de inercia y de coriolis respectivamente.
+    *Los archivos "M.txt" y "C.txt" son abiertos en un editor de código llamado "Sublime Text 3". De este modo ya queda expresado en sintaxis de Python. El motivo de hacerlo por medio de este programa es porque el modelo es demasiado grande y tomaría horas hacer los cambios manualmente.
+    *Se utilizan algunos plugings para seleccionar los corchetes de las matrices y las potencias dentro de los términos de cada matriz. Los archivos nuevos son guardados como "M Python.txt" y C Python.txt" que corresponden a la matriz de inercia y coriolis respectivamente pero en sintaxis de Python.
+    
 Por qué el proyecto es útil.
 Cómo pueden comenzar los usuarios con el proyecto.
 Dónde pueden recibir ayuda los usuarios con tu proyecto
